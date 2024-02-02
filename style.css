@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+
+/* переменные CSS цвета */
+:root {
+	--primary: #0018ed;
+	--mainFont: #2d2e3a;
+}
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+	min-width: 144px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 22px 39px 21px 26px;
+	align-items: center;
+	max-width: 1305px;
+}
+
+.header__logo {
+	display:inline-flex;
+	/*align-items: flex-start;*/
+	align-items: center;
+	gap: 2px;
+	color: var(--Black, #2D2E3A);
+	font-family: Rubik;
+	font-size: 37px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.logo2 {
+	color: var(--Blue, #0018ED);
+	/* align-items: start;*/
+	font-family: Rubik;
+	font-size: 37px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	/*gap: 48px;*/
+	/*margin-left: 100px;*/
+}
+
+.header__button {
+	display: flex;
+	padding: 16px 32px;
+	align-items: center;
+	/*align-items: flex-start;*/
+	border-radius: 32px;
+	border: 2px solid var(--Blue, #0018ED);
+	color: var(--Blue, #0018ED);
+	font-family: "Source Sans Pro";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	gap: 18px;
+	background: none;
+	cursor: pointer;
+	margin-left: 48px ;
+}
+
+.header__menu {
+	/*color: var(--Black, #2D2E3A);*/
+	/* Menu subitem */
+	/*font-family: "Source Sans Pro";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;*/
+	/* 24px */
+	display: flex;
+	gap: 32px;
+	align-items: center;
+}
+
+.header__menu ul {
+	list-style: none;
+	display: flex;
+	gap: 24px;
+}
+
+.header__menu ul>li {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%
+}
+
+.header__menu ul>li>a {
+	text-decoration: none;
+	color: var(--mainFont);
+}
+
+.header__menu ul>li>a:hover {
+	color: var(--primary);
+}
+
+.header__menu>a {
+	display: flex;
+	/* отступы между иконкой и текстом */
+	gap: 8px;
+	/*Управляет выравниванием элементов flex вдоль поперечной оси. Может быть stretch (по умолчанию),flex-start,flex-end,center или baseline */
+	align-items: center;
+	/* убирает подчеркивание текста */
+	text-decoration: none;
+	/* цвет шрифта */
+	color: var(--mainFont);
+	font-size: 20px;
+	font-style: normal;
+	/* жирность текста */
+	font-weight: 400;
+	line-height: 120%
+}
+
+.header__menu>a:hover {
+	color: var(--primary);
+}
